@@ -5,7 +5,7 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
+nombre: Gonzalo
 apellido:
 ---
 Ejercicio: entrada_salida_04
@@ -33,8 +33,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
-        
+        # Utilizar el cuadro de diálogo prompt para obtener un nombre
+        nombre_alumno = prompt("Ingrese su nombre", "Nombre")
+        self.txt_nombre.delete(0, "end")
+        self.txt_nombre.insert(0, nombre_alumno)
     
 if __name__ == "__main__":
     app = App()

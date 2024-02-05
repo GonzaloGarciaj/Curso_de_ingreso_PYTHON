@@ -4,16 +4,16 @@ from tkinter.messagebox import askyesno as question
 from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
-'''
-nombre:
-apellido:
----
-Ejercicio: entrada_salida_02
----
-Enunciado:
-Al presionar el botón  'Mostrar', se deberá obtener un dato utilizando el Dialog Prompt
-y luego mostrarlo utilizando el Dialog Alert
-'''
+# '''
+# nombre:Carlitox
+# apellido:
+# ---
+# Ejercicio: entrada_salida_02
+# ---
+# Enunciado:
+# Al presionar el botón  'Mostrar', se deberá obtener un dato utilizando el Dialog Prompt
+# y luego mostrarlo utilizando el Dialog Alert
+# '''
 
 class App(customtkinter.CTk):
     
@@ -27,7 +27,15 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+
+        #nombre_alumno = "Carlitox"  # Linea de asignacion
+        
+        nombre_alumno = prompt("Ingrese un dato:", "Ingrese su nombre")
+        
+        
+        alert("Mensaje", nombre_alumno)
+
+
         
         
     
