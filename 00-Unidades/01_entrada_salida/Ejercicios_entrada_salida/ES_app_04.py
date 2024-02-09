@@ -6,7 +6,7 @@ import customtkinter
 
 '''
 nombre: Gonzalo
-apellido:
+apellido: garcia jofre
 ---
 Ejercicio: entrada_salida_04
 ---
